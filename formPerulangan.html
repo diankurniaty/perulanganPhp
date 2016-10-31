@@ -1,0 +1,32 @@
+<html>
+	<title> Form Perulangan </title>
+	
+	<body>
+	  <h3>FORM PERULANGAN </h3>
+		<br/>
+		
+		<form id="formUlang" name="formUlang" method="post" action="fungsiUlang.php">
+			<label> TEKS 1 :</label>
+			<input type="text" id="txt1" name="txt1" required> </input>
+			<br/> <br/>
+			<label> TEKS 2 :</label>
+			<input type="text" id="txt1" name="txt2" required> </input>
+			<br/> <br/>
+			<label> Jumlah&nbsp :</label>
+			<input type="text" id="jumlah" name="jumlah" maxlength=2 placeholder="Numeric"  required> </input>
+			<br/> <br/>
+			
+			<label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+			<input type="Submit" value="SUBMIT"></input>
+		</form>
+		
+	</body>
+</html>
+
+<script type='javacript'>
+function angka(e) {
+	   if (!/^[0-9]+$/.test(e.value)) {
+		  e.value = e.value.substring(0,e.value.length-1);
+	   }
+	}
+</script>	
